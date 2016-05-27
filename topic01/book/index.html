@@ -137,14 +137,16 @@ Windows Command Prompt, this is where you will write instructions to publish you
 <li>Copy the following lines of code (highlight the code, right click and choose copy) </li>
 </ul>
 <pre><code>
-    &lt;header id=&quot;header&quot;&gt;
-      &lt;h2&gt;
-         Department of Computing &amp;amp; Mathematics
-      &lt;/h2&gt;
-      &lt;h3&gt; Summer Camp - Web Development &lt;/h3&gt;
-      &lt;hr&gt;
+    &lt;header class=&quot;ui two column center aligned middle aligned grid segment&quot;&gt;
+      &lt;div class=&quot;ui column&quot;&gt;
+        &lt;h2 class=&quot;ui header&quot;&gt; Department of Computing &amp;amp; Mathematics &lt;/h2&gt;
+        &lt;h3 class=&quot;ui header&quot;&gt;Computing Summer Camp&lt;/h3&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;ui column&quot;&gt;
+        &lt;p&gt;
+        &lt;/p&gt;
+      &lt;/div&gt;
     &lt;/header&gt;
-
 </code></pre>
 
 <ul>
@@ -173,33 +175,23 @@ Windows Command Prompt, this is where you will write instructions to publish you
 </li>
 </ul>
 <pre><code>
-    &lt;div class=&quot;ui container&quot;&gt;
-      &lt;div class=&quot;ui cards&quot;&gt;
-        &lt;div class=&quot;card&quot; id=&quot;stark&quot;&gt;
+        &lt;div class=&quot;card&quot; id=&quot;spotify&quot;&gt;
           &lt;div class=&quot;content&quot;&gt;
-            &lt;img class=&quot;right floated mini ui image&quot; src=&quot;/images/avatar/large/elliot.jpg&quot;&gt;
             &lt;div class=&quot;header&quot;&gt;
-             Elliot Fu
+             Spotify
             &lt;/div&gt;
             &lt;div class=&quot;meta&quot;&gt;
-             Friends of Veronika
+             Music for everyone
             &lt;/div&gt;
             &lt;div class=&quot;description&quot;&gt;
-            Elliot requested permission to view your contact details
+            There are millions of songs on Spotify. Play your favorites, discover new tracks, and build the perfect collection.
             &lt;/div&gt;
           &lt;/div&gt;
         &lt;/div&gt;
-      &lt;/div&gt;
-    &lt;/div&gt;  
-
 </code></pre>
 
 <ul>
-<li>
-<ul>
 <li>Go back to the Sublime text editor and paste it into the html code so that it comes directly after the <code>&lt;/header</code>&gt; as you can see below:</li>
-</ul>
-</li>
 </ul>
 <p><img alt="" src="./img/09.png"></p>
 <ul>
@@ -223,11 +215,11 @@ Your web page should now look like this.</p>
 <li>The Images folder contains 4 images, the first one we will use is wit-crest.png</li>
 <li>Copy the following line of code.</li>
 </ul>
-<pre><code>&lt;img class=&quot;header-crest-img&quot; src=&quot;assets/images/wit-crest.png&quot; alt=&quot;WIT Crest&quot;&gt;
+<pre><code>&lt;img class=&quot;ui medium image&quot; src=&quot;assets/images/wit-crest.png&quot; alt=&quot;WIT Crest&quot;&gt;
 </code></pre>
 
 <ul>
-<li>Go to Sublime text editor and place the line of code inside the <code>&lt;h2</code>&gt; and <code>&lt;/h2</code>&gt; alongside the text Department of Computing &amp; Mathematics so that it looks like this:</li>
+<li>Go to Sublime text editor and place the line of code inside the <code>&lt;p</code>&gt; and <code>&lt;/p</code>&gt;  so that it looks like this:</li>
 </ul>
 <p><img alt="" src="./img/11.png"></p>
 <ul>
@@ -240,7 +232,7 @@ Your web page should now look like this.</p>
 </ul>
 <p><img alt="" src="./img/12.png"></p>
 <ul>
-<li>You should see the W.I.T crest banner appear in the top left corner of header.</li>
+<li>You should see the W.I.T crest banner appear in the top right of the header.</li>
 <li>Next we want to add an image to the Spotify content.</li>
 <li>Copy the following code.</li>
 </ul>
@@ -274,16 +266,106 @@ Your web page should now look like this.</p>
   </div>
   <div  class="ui tab segment lab" data-tab="03">
     <h1>Adding content</h1>
-<p>duplicate cards, and add a footer with another image, personal?</p>
+<p>Now we have created one piece of content we can copy it and make two more pieces of content.
+First we need to be able to view our code in smaller parts. We do this by hiding some parts of the code and showing other parts. </p>
+<ul>
+<li>In the Sublime text editor move your mouse near the number 23 (this is the line number). It must be the line that contains the code <code>&lt;div class="card" id="spotify"</code>&gt; . You should see a small downwards facing arrow appearing beside the number. </li>
+<li>Click on this arrow.</li>
+</ul>
+<p><img alt="" src="./img/18.png"></p>
+<ul>
+<li>Once the arrow is clicked all of the code for the spotify content is hidden and it looks like this:</li>
+</ul>
+<p><img alt="" src="./img/19.png"></p>
+<ul>
+<li>
+<p>This makes is easier to read a large file of code. We will be now adding more code and this technique is helpful for viewing sections of code.</p>
+</li>
+<li>
+<p>Copy this section of code</p>
+</li>
+</ul>
+<pre><code>        &lt;div class=&quot;card&quot; id=&quot;euro2016&quot;&gt;
+          &lt;div class=&quot;content&quot;&gt;
+             &lt;img class=&quot;left floated small ui image&quot; src=&quot;assets/images/euro2016.jpg&quot;&gt;
+          &lt;div class=&quot;meta&quot;&gt;
+             10th June - 10th July
+          &lt;/div&gt;
+          &lt;div class=&quot;description&quot;&gt;
+            The 2016 UEFA European Championship will be the 15th edition of the international men's football championship of Europe.
+          &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+
+</code></pre>
+
+<ul>
+<li>Go to the Sublime text editor and paste the section of code directly after the <code>&lt;/div</code>&gt; for the spotify section as shown below:</li>
+</ul>
+<p><img alt="" src="./img/20.png"></p>
+<ul>
+<li>If you are happy your code now looks like this:</li>
+</ul>
+<p><img alt="" src="./img/21.png"></p>
+<ul>
+<li>Choose save from the file menu</li>
+<li>Go to the Chrome web browser and click the refresh button.</li>
+</ul>
+<p><img alt="" src="./img/22.png"></p>
+<ul>
+<li>We now have two pieces of content, one for spotify and one for the European Cup.</li>
+<li>We will add one more piece of content to complete the web page content.</li>
+<li>First hide the section of code that relates to the euro2016 piece of content, you do this by clicking on the downwards arrow beside number 34 (the line of code containing <code>&lt;div class="card" id="euro2016"</code>&gt;. Your code will now look like this:</li>
+</ul>
+<p><img alt="" src="./img/23.png"></p>
+<ul>
+<li>Copy this piece of code</li>
+</ul>
+<pre><code>        &lt;div class=&quot;card&quot; id=&quot;chewbacca-mom&quot;&gt;
+          &lt;div class=&quot;content&quot;&gt;
+             &lt;img class=&quot;left floated small ui image&quot; src=&quot;assets/images/chewbacca-mom.jpg&quot;&gt;
+          &lt;div class=&quot;meta&quot;&gt;
+             Chewbacca laugh heard around the world
+            &lt;/div&gt;
+            &lt;div class=&quot;description&quot;&gt;
+            Payne could hardly contain her excitement after buying the Chewbacca mask from Kohls for herself as part of her birthday joy.
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+</code></pre>
+
+<ul>
+<li>Go to Sublime text editor and paste the piece of code directly after the <code>&lt;/div</code>&gt; for the euro2016 section, as shown below:</li>
+</ul>
+<p><img alt="" src="./img/24.png"></p>
+<ul>
+<li>Your code should now look like this:</li>
+</ul>
+<p><img alt="" src="./img/25.png"></p>
+<ul>
+<li>Choose Save from the File menu if your code is correct.</li>
+<li>Go to Chrome web browser and click refresh.</li>
+</ul>
+<p><img alt="" src="./img/26.png"></p>
+<ul>
+<li>You should now see three pieces of content</li>
+</ul>
   </div>
   <div  class="ui tab segment lab" data-tab="04">
     <h1>Links</h1>
+<p>https://www.spotify.com/ie/</p>
+<p>http://www.uefa.com/uefaeuro/</p>
+<p>https://www.youtube.com/watch?v=X26FuAlnnWY</p>
   </div>
   <div  class="ui tab segment lab" data-tab="05">
     <h1>Hosting</h1>
   </div>
   <div  class="ui tab segment lab" data-tab="06">
     <h1>Semantic elements</h1>
+<p>implement an element</p>
+<p>point them towards a choice of other elements</p>
+<p>add an element outside of the cards e.g footer</p>
+<p>buttons? icons? ribbons?</p>
   </div>
 <script>
 $('.ui.menu .item')
