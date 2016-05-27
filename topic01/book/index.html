@@ -1,0 +1,330 @@
+ <!DOCTYPE html>
+ <html>
+   <head>
+
+     <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+
+     <meta charset="utf-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.1.4/semantic.min.css" type="text/css">
+     <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.9.1/styles/solarized_light.min.css" rel="stylesheet" />
+
+     <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.address/1.6/jquery.address.min.js"></script>
+     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.1.4/semantic.min.js"></script>
+     <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.9.1/highlight.min.js"></script>
+     <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.9.1/languages/java.min.js"></script>
+     <script>hljs.initHighlightingOnLoad();</script>
+
+      <style>
+
+
+body 
+{
+  font-family: "Open Sans", "Helvetica", "Helvetica Neue",  "Arial", sans-serif;
+}
+
+figcaption
+{
+  margin-bottom: 20px;
+}
+
+.vertical-align
+{
+  display: flex;
+  align-items: center;
+}
+
+.credits
+{
+  min-height:20px;
+}
+    </style>
+
+  </head>
+
+  <body>
+
+  <div class="ui container">
+<style>
+
+
+code
+{
+  font-family: "Monaco";
+  font-size: 110%;
+}
+
+img
+{
+  padding:1px;
+  border:1px solid black;
+}
+
+h1
+{
+  font-style:italic;
+  font-size:130%;
+  border-bottom: thin solid black;
+}
+h2
+{
+  font-size:110%;
+  border-bottom: thin solid black;
+}
+h3
+{
+  font-size:100%;
+  border-bottom: thin solid black;
+}
+
+</style>
+
+<div class="ui fixed top pointing inverted menu labmenu">
+  <header class="header item">
+    <a href="../index.html">
+      <i class="sitemap icon"></i>
+      Web Development
+    </a>
+  </header>
+  <div class="right tab-menu menu">
+    <a class="active item" data-tab="Lab-01">
+        Lab-01
+    </a>
+      <a class="item" data-tab="01">
+        01
+      </a>
+      <a class="item" data-tab="02">
+        02
+      </a>
+      <a class="item" data-tab="03">
+        03
+      </a>
+      <a class="item" data-tab="04">
+        04
+      </a>
+      <a class="item" data-tab="05">
+        05
+      </a>
+      <a class="item" data-tab="06">
+        06
+      </a>
+    </div>
+</div>
+
+<br><br>
+
+  <div  class="ui tab segment lab" data-tab="Lab-01">
+    <h1>Objectives</h1>
+<p>In this lab you will be create a website similar to the style of pinterest. To start click on step 01 in the top menu bar of this web page.</p>
+  </div>
+  <div  class="ui tab segment lab" data-tab="01">
+    <h1>Web Development Tools</h1>
+<p>The following screens are open on your computer:</p>
+<p><img alt="" src="./img/01.png">
+Sublime Text Editor, this is where you will write your code for creating the website.</p>
+<p><img alt="" src="./img/02.png">
+Chrome Web Browser, this is the application you use to view you website locally on your computer and remotely on the Internet.</p>
+<p><img alt="" src="./img/03.png">
+Windows Command Prompt, this is where you will write instructions to publish your website to the Internet.</p>
+<h2>Structure</h2>
+<p>To develop a web page you must have a html code that the web browser understands and presents as a web page.</p>
+<p><img alt="" src="./img/04.png"></p>
+<p>The code you see in your Sublime editor is html code. It contains two parts, the <code>&lt;head</code>&gt; shown as the green section, and the <code>&lt;body</code>&gt; shown as the red section.</p>
+<p>You will not be making changes to the <code>&lt;head</code>&gt; section, all of your code will be put into the <code>&lt;body</code>&gt; which at the moment is blank. While it is blank the webpage open in the browser is also empty of any content and displays just as a white page. </p>
+<ul>
+<li>Copy the following lines of code (highlight the code, right click and choose copy) </li>
+</ul>
+<pre><code>
+    &lt;header id=&quot;header&quot;&gt;
+      &lt;h2&gt;
+         Department of Computing &amp;amp; Mathematics
+      &lt;/h2&gt;
+      &lt;h3&gt; Summer Camp - Web Development &lt;/h3&gt;
+      &lt;hr&gt;
+    &lt;/header&gt;
+
+</code></pre>
+
+<ul>
+<li>Go to the Sublime text editor and paste the code so that it appears in between the <code>&lt;body</code>&gt; and the <code>&lt;/body</code>&gt;</li>
+<li>It should look like this:</li>
+</ul>
+<p><img alt="" src="./img/05.png"></p>
+<ul>
+<li>From the File menu choose Save.</li>
+</ul>
+<p><img alt="" src="./img/06.png"></p>
+<ul>
+<li>Go to the Chrome web browser that is open on your computer and click the refresh button (see it circled in red below).</li>
+</ul>
+<p><img alt="" src="./img/07.png"></p>
+<ul>
+<li>You should see the following appear in your web page:</li>
+</ul>
+<p><img alt="" src="./img/08.png"></p>
+<ul>
+<li>
+<p>You have now edited your html code so that the text will show in the browser. Next we will add more content.</p>
+</li>
+<li>
+<p>Copy the following code </p>
+</li>
+</ul>
+<pre><code>
+    &lt;div class=&quot;ui container&quot;&gt;
+      &lt;div class=&quot;ui cards&quot;&gt;
+        &lt;div class=&quot;card&quot; id=&quot;stark&quot;&gt;
+          &lt;div class=&quot;content&quot;&gt;
+            &lt;img class=&quot;right floated mini ui image&quot; src=&quot;/images/avatar/large/elliot.jpg&quot;&gt;
+            &lt;div class=&quot;header&quot;&gt;
+             Elliot Fu
+            &lt;/div&gt;
+            &lt;div class=&quot;meta&quot;&gt;
+             Friends of Veronika
+            &lt;/div&gt;
+            &lt;div class=&quot;description&quot;&gt;
+            Elliot requested permission to view your contact details
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;  
+
+</code></pre>
+
+<ul>
+<li>
+<ul>
+<li>Go back to the Sublime text editor and paste it into the html code so that it comes directly after the <code>&lt;/header</code>&gt; as you can see below:</li>
+</ul>
+</li>
+</ul>
+<p><img alt="" src="./img/09.png"></p>
+<ul>
+<li>Once you are happy that your code looks the same as the image above then choose Save from the File menu.</li>
+<li>Go to the Chrome web browser and click the refresh button to be able to view the changes you made.</li>
+</ul>
+<p><img alt="" src="./img/10.png">
+Your web page should now look like this.</p>
+<ul>
+<li>Go to step 02 in this lab (link is in the top bar of this web page).</li>
+</ul>
+  </div>
+  <div  class="ui tab segment lab" data-tab="02">
+    <h1>Images</h1>
+<p>Next we want to add some images to our web page.</p>
+<ul>
+<li>In your website folder you will see another folder called assets, in that folder you can see a folder called images.</li>
+</ul>
+<p><img alt="" src="./img/13.png"></p>
+<ul>
+<li>The Images folder contains 4 images, the first one we will use is wit-crest.png</li>
+<li>Copy the following line of code.</li>
+</ul>
+<pre><code>&lt;img class=&quot;header-crest-img&quot; src=&quot;assets/images/wit-crest.png&quot; alt=&quot;WIT Crest&quot;&gt;
+</code></pre>
+
+<ul>
+<li>Go to Sublime text editor and place the line of code inside the <code>&lt;h2</code>&gt; and <code>&lt;/h2</code>&gt; alongside the text Department of Computing &amp; Mathematics so that it looks like this:</li>
+</ul>
+<p><img alt="" src="./img/11.png"></p>
+<ul>
+<li>
+<p>Choose save from the File menu in Sublime </p>
+</li>
+<li>
+<p>Go to the Chrome web browser and click the refresh button to see the result.</p>
+</li>
+</ul>
+<p><img alt="" src="./img/12.png"></p>
+<ul>
+<li>You should see the W.I.T crest banner appear in the top left corner of header.</li>
+<li>Next we want to add an image to the Spotify content.</li>
+<li>Copy the following code.</li>
+</ul>
+<pre><code>       &lt;img class=&quot;left floated small ui image&quot; src=&quot;assets/images/spotify.png&quot;&gt;
+
+</code></pre>
+
+<ul>
+<li>Go to Sublime text editor and paste the code so that it appears just after the <code>&lt;div class="content"</code>&gt;</li>
+</ul>
+<p><img alt="" src="./img/14.png"></p>
+<ul>
+<li>If you are happy that your code looks the same as above then choose Save from the File menu.</li>
+<li>Go to the Chrome web browser and click the refresh button.</li>
+</ul>
+<p><img alt="" src="./img/15.png"></p>
+<ul>
+<li>Now that we have the Spotify image visible the text to the right isn't really needed. Try removing the text "Spotify" so that the content looks the same as this:</li>
+</ul>
+<p><img alt="" src="./img/16.png"></p>
+<ul>
+<li>You do this by going to Sublime text editor and deleting the code:</li>
+</ul>
+<pre><code>&lt;div class=&quot;header&quot;&gt;
+  Spotify
+&lt;/div&gt;
+</code></pre>
+
+<p>Your code now looks like this:</p>
+<p><img alt="" src="./img/17.png"></p>
+  </div>
+  <div  class="ui tab segment lab" data-tab="03">
+    <h1>Adding content</h1>
+<p>duplicate cards, and add a footer with another image, personal?</p>
+  </div>
+  <div  class="ui tab segment lab" data-tab="04">
+    <h1>Links</h1>
+  </div>
+  <div  class="ui tab segment lab" data-tab="05">
+    <h1>Hosting</h1>
+  </div>
+  <div  class="ui tab segment lab" data-tab="06">
+    <h1>Semantic elements</h1>
+  </div>
+<script>
+$('.ui.menu .item')
+  .tab({
+    history: true,
+    historyType: 'hash'
+  })
+;
+</script>
+   </div>
+
+
+
+  <br><br>
+  <div class="ui bottom fixed borderless menu">
+    <div class="ui small item">
+    <p id="footertext">
+    Prepared by  Dr. Brenda Mullally (bmullally@wit.ie) Eamonn De Leastar (edeleaster@wit.ie). Except where otherwise noted, this content is licensed under a
+     <a  href="http://creativecommons.org/licenses/by-nc/4.0/" title="External link to http://creativecommons.org/licenses/by-nc/4.0/"
+       target="_blank">Creative Commons Attribution-NonCommercial 4.0 License
+     </a>
+     </p>
+    </div>
+  </div>    <script>
+
+$(document).ready(function()
+{
+  $("img").addClass ("ui image");
+
+  var images = $(".lab img");
+  jQuery.each(images, function(i)  {
+    if((images[i].alt).length > 0)
+    {
+      var div_img = $(document.createElement("div")).addClass("ui segment");
+      $(images[i]).wrap(div_img);
+      var div_label = $(document.createElement("div")).addClass("ui ribbon teal top attached label");
+      div_label.append(images[i].alt);
+      $(div_label).insertBefore(images[i]);
+    }
+  });
+})    </script>
+
+  </body>
+ </html>
